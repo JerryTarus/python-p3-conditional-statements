@@ -2,7 +2,15 @@
 
 def admin_login(username, password):
     # your code here
-    pass
+    
+   
+    
+    if (username.lower() == "sudo" or username.lower() == "admin" or username == "ADMIN") and password == 12345:
+        print("Access Granted")
+    else:
+        print("Access Denied")
+        
+admin_login("Jerry", 12345)
 
 def hows_the_weather(temperature):
     # your code here
